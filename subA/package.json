@@ -2,21 +2,27 @@
   "name": "sub_a",
   "version": "1.0.0",
   "scripts": {
-    "start": "webpack serve --config webpack.config.js"
+    "start": "webpack serve --config webpack.config.js",
+    "build": "webpack --config webpack.prod.js"
   },
   "dependencies": {
     "react": "^17.0.1",
     "react-dom": "^17.0.1"
   },
   "devDependencies": {
-    "@babel/core": "^7.12.3",
+    "@babel/core": "7.15.5",
+    "@babel/preset-react": "7.14.5",
+    "babel-loader": "8.2.2",
+    "html-webpack-plugin": "5.3.2",
+    "sass": "^1.43.5",
+    "sass-loader": "^12.3.0",
     "@babel/plugin-transform-runtime": "^7.12.1",
     "@babel/preset-env": "^7.12.1",
-    "@babel/preset-react": "^7.12.1",
-    "babel-loader": "^8.1.0",
-    "html-webpack-plugin": "^4.5.0",
-    "webpack": "^5.4.0",
-    "webpack-cli": "^4.1.0",
-    "webpack-dev-server": "^3.11.0"
+    "serve": "12.0.1",
+    "terser-webpack-plugin": "^5.2.5",
+    "webpack": "5.65.0",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.5.0"
+    
   }
 }
